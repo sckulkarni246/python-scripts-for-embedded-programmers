@@ -5,11 +5,9 @@ def data_logger_csv(buffer,fileName):
 		csvWriter = csv.writer(my_csv,delimiter=',')
 		csvWriter.writerow(buffer)	
 		
-buff = []
+buffer = []
 for i in range(0,100):
-	buff.append(i)
-
-buffer = buff
+	buffer.append(i)
 	
 print("Writing buffer to buffer.csv now...")
 data_logger_csv(buffer,"buffer.csv")
