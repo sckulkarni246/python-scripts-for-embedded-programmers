@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Simple>
+	<Level>
+		<First>Jon</First>
+		<Last>Snow</Last>
+	</Level>
+	<Level>
+		<First>Joffrey</First>
+		<Last>Lannister</Last>
+	</Level>
+	<Level>
+		<First>Robb</First>
+		<Last>Stark</Last>
+	</Level>
+	
+</Simple>
