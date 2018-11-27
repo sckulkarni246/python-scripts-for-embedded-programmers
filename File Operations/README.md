@@ -27,3 +27,20 @@ Reads 2 columns from Data.xlsx and prints the entries
 ```bat
 python extract-data-from-excel-doc.py
 ```
+## Text
+
+Scripts for working with text files.
+
+### text-file-reader.py
+
+Reads all lines of a text file.
+```bat
+python text-file-reader.py
+```
+
+### text-file-writer.py
+
+Writes content to a text file.
+```bat
+python text-file-writer.py
+```
