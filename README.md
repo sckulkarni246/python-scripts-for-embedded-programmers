@@ -1,4 +1,4 @@
-# Why this repo exists
+# Python Scripts For Embedded Programmers
 
 Once in a while, I write python-based host scripts during the course of my work or personal projects. Some of these tasks are:
 1. Communicating with embedded systems over some bus
