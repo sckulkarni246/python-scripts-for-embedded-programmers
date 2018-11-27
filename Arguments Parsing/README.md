@@ -10,6 +10,6 @@ python pass-arguments-to-script.py --help
 ```
 ### To pass arguments to the script
 ```bat
-python pass-arguments-to-script.py --arg1 23 --arg2 46 --arg3 45
+python pass-arguments-to-script.py --arg1 COM1 --arg2 115200
 ```
 
