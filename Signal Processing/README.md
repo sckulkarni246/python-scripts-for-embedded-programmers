@@ -4,5 +4,5 @@
 
 Does an FFT of a simple sequence and plots time and frequency domain data.
 ```bat
-python simple_fft.py
+python simple-fft.py
 ```
