@@ -7,7 +7,7 @@ Once in a while, I write python-based host scripts during the course of my work 
 4. Parsing XML files that represent some configuration
 5. <many more!>
 
-I am documenting here some code snippets that have enabled me to do that over the last few years. These range from extremely basic to somewhat complex codes.
+I am sharing here some code snippets and full-fledged applications that have enabled me to do that over the last few years. These range from extremely basic to somewhat complex codes.
 
-I generally use Python 3.x and would recommend the same to anyone who wants to use these codes.
+*I generally use **Python 3.x** and would recommend the same to anyone who wants to use these codes.*
 
