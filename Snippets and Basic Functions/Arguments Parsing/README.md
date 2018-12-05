@@ -10,6 +10,6 @@ python pass-arguments-to-script.py --help
 ```
 ### To pass arguments to the script
 ```bat
-python pass-arguments-to-script.py --arg1 COM1 --arg2 115200
+python pass-arguments-to-script.py --port COM1 --baudrate 115200
 ```
 
