@@ -1,0 +1,32 @@
+Important commands for setup
+============================
+
+List EC curves supported in this version of OpenSSL
+	openssl ecparam -list_curves
+	
+Generate a new private key
+	openssl ecparam -name prime256v1 -genkey -noout -out honeywell-demo-key.pem
+	
+Generate public key corresponding to private key
+	openssl ec -in honeywell-demo-key.pem -pubout -out honeywell-demo-key-pub.pem
+	
+Generate CSR using private key generated before
+	openssl req -new -key honeywell-demo-key.pem -out request.csr -sha256
+	
+Sign CSR using private key (self signed cert if key is same as one used to generate CSR - only for CA)
+	openssl req -x509 -sha256 -days 365 -key honeywell-demo-key.pem -in request.csr -out cert.pem
+	
+Sign CSR using CA key and cert (useful for intermediate and end nodes)
+	openssl x509 -req -sha256 -days 365 -in server.csr -CA ca.pem -CAkey ca.pem -CAcreateserial -out server.pem
+	
+Check that cert belongs to a private key
+	openssl pkey -pubout -in host-demo-key-priv.pem | openssl md5
+	(stdin)= output
+	openssl x509 -pubkey -in host-cert.pem -noout | openssl md5
+	(stdin)= same output as above
+
+Convert PEM to DER format for raw processing
+	openssl x509 -outform der -in cert.pem -out cert.der
+
+	
+
